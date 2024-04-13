@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enviar un formulario al pulsar un enlace</title>
+  <style>
+    #mi_formulario {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Enviar un formulario al pulsar un enlace</h1>
+  <p>
+    <a href="#" id="enlace">Enviar datos por POST</a>
+  </p>
+  <form action="pagina_destino.php" method=post name="formulario1" id="mi_formulario">
+    <input type="hidden" name="campo1" value="valor">
+    <input type="hidden" name="campo2" value="otroValor">
+  </form>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('enlace').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.getElementById('mi_formulario').submit();
+      })
+    })
+  </script>
+</body>
+</html>

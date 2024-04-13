@@ -1,0 +1,21 @@
+{
+  "name": "evaluacion",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon ./js/main",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.19.2",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.9"
+  }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link type="text/css" rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <form action="/validForm" method="post" id="form_data">
+        <div class="formulario">
+            <h1>Formulario de inscripción</h1>
+            <h3>Datos Personales</h3>
+            <div class="personal">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="personal">
+                <label for="surname">Apellidos</label>
+                <input type="text" id="surname" name="surname">
+            </div>
+            <div class="personal">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@email.com">
+            </div>
+            <div class="personal">
+                <label for="tel">Telefono</label>
+                <input type="number" id="telefono" name="telefono">
+            </div>
+            <h3> Datos Académicos</h3>
+            <div class="academic">
+                <label for="curso">Cursos</label>
+                <select id="curso" name="curso">
+                    <option value="">Selecciona curso</option>
+                    <option value="desarrollo Front">Desarrollo Front</option>
+                    <option value="desarrollo Back">Desarrollo Back</option>
+                    <option value="Full Stack">Desarrollo Full Stack </option>
+                    <option value="Data Science">Data Science</option>
+                </select>
+            </div>
+            <div class="academic">
+                <label for="date" name="fecha">Fecha inicio</label>
+                <input id="fecha" type="date" name="fecha">
+            </div>
+            <div class="academic">
+                <label for="escuela">Academía</label>
+                <select id="escuela" name="escuela">
+                    <option value="Deusto Formación">Deusto Formación</option>
+                    <option value="Tokio School">Tokio School</option>
+                    <option value="Udemy">Udemy</option>
+                </select>
+            </div>
+            <button type="submit" > Enviar </button>           
+        </div>
+    </form>
+    <script  type="text/javascript" src="./js/main.js"></script>
+</body>
+</html>
